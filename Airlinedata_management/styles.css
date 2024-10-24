@@ -1,0 +1,122 @@
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    text-align: center;
+}
+
+/* Body Styles */
+
+
+/* Container for forms and content */
+.container {
+    max-width: 150px;
+    margin: 20px auto; /* Add margin for spacing */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below headings */
+}
+
+/* Form section styles */
+.form-section {
+    margin-bottom: 20px;
+}
+
+/* Input styles */
+input[type="text"], input[type="date"], input[type="submit"] {
+    width: calc(150px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+}
+
+/* Button styles */
+button, input[type="submit"] {
+    padding: 12px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+button:hover, input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Response message styles */
+#bookResponse, #viewResponse, #cancelResponse {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* General Styles for Navigation */
+nav {
+    background-color: #333; /* Dark background */
+    padding: 10px; /* Space around the links */
+    text-align: center; /* Center the links */
+}
+
+/* Styling for the links in the navigation bar */
+nav a {
+    color: white; /* White text for links */
+    padding: 14px 20px; /* Space around each link */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Make text bold */
+    display: inline-block; /* Display links horizontally */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the links */
+nav a:hover {
+    background-color: #0fb800; /* Change background on hover */
+    color: #fff; /* Maintain white text */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+/* Style for links on active/current page */
+nav a.active {
+    background-color: #04AA6D; /* Highlight the active link */
+    color: white;
+    border-radius: 4px;
+}
+
+
+/* Responsive design for mobile */
+@media (max-width: 400px) {
+    .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    input[type="text"], input[type="date"], input[type="submit"], button {
+        width: 200px; /* Full width on smaller screens */
+    }
+
+    .nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .nav li {
+        margin: 5px 0; /* Space out nav items */
+    }
+}
+
+* {
+    background-image: url('pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Sets the height of the div to 100% of the viewport height */
+}
