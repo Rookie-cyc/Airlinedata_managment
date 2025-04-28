@@ -1,0 +1,3 @@
+docker build --no-cache -t linear_regression .
+docker run --rm linear_regression
+docker build -t sentiment_analysis .
